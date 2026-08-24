@@ -1,0 +1,146 @@
+[
+  {
+    "id": "hydraulic-cylinder",
+    "index": "01",
+    "name": "Hydraulic Cylinder",
+    "tagline": "Raises and lowers the agitator shaft",
+    "function": "A double-acting hydraulic ram mounted on the top gantry drives the entire agitator shaft up and down inside the vessel. Lowering the shaft brings the blades close to the filter media for scraping and cake discharge; raising it clears the vessel for wash cycles or inspection.",
+    "construction": "Machined carbon-steel cylinder barrel with a chrome-plated piston rod for corrosion resistance and a low-friction seal pack. Stroke length is matched to vessel depth, and the cylinder is rated well above the axial load the agitator can impose on the cake bed.",
+    "explode": { "dx": 0, "dy": -190 }
+  },
+  {
+    "id": "drive-system",
+    "index": "02",
+    "name": "Drive System",
+    "tagline": "Electric motor with gearbox or direct hydraulic drive",
+    "function": "Supplies the rotational torque that turns the agitator. Torque has to stay high even at very low speed, since dense, half-drained cake resists the blades far more than a free-flowing slurry.",
+    "construction": "Typically a TEFC or explosion-proof (ATEX) electric motor coupled to a right-angle planetary gearbox, or, on fully hydraulic units, a hydraulic motor fed from the same power pack as the lift cylinder — useful in solvent-rich zones where electrical ignition sources must be minimised.",
+    "explode": { "dx": -170, "dy": -140 }
+  },
+  {
+    "id": "guiding-rods",
+    "index": "03",
+    "name": "Guiding Rods",
+    "tagline": "Keep the agitator shaft on a true vertical line",
+    "function": "Twin rods run parallel to the agitator shaft and carry the side-load from the drive and cylinder, so the shaft itself only has to transmit torque and stay perfectly concentric with the vessel and filter plate.",
+    "construction": "Hardened, ground stainless steel rods running through linear bushings in the top gantry and head plate. Precision fit here is what keeps the agitator blades running at a consistent, narrow clearance to the vessel wall over years of cycles.",
+    "explode": { "dx": -230, "dy": -20 }
+  },
+  {
+    "id": "mechanical-seal",
+    "index": "04",
+    "name": "Mechanical Seal",
+    "tagline": "Double mechanical seal",
+    "function": "Seals the point where the rotating, reciprocating agitator shaft passes into the pressure- and vacuum-rated vessel, containing vapours and preventing outside air or contamination from entering the process.",
+    "construction": "Two seal faces — typically silicon carbide or tungsten carbide — run in a barrier fluid held at a pressure between the process and atmosphere. If either seal face weeps, the barrier fluid contains it, so the operator gets a warning long before the process side is compromised.",
+    "explode": { "dx": 190, "dy": -80 }
+  },
+  {
+    "id": "aeration-outlet",
+    "index": "05",
+    "name": "Aeration Outlet",
+    "tagline": "Vents to a dust filter",
+    "function": "Lets displaced gas escape as the vessel is filled or as the agitator moves through the headspace, routing any entrained fine powder to a dust filter rather than venting it to the room.",
+    "construction": "A short flanged nozzle on the upper shaft housing connecting to ducting and a cartridge or bag-type dust filter, sized so pressure inside the vessel never spikes during fast filling.",
+    "explode": { "dx": -210, "dy": -230 }
+  },
+  {
+    "id": "wash-inlet",
+    "index": "06",
+    "name": "Wash Inlet",
+    "tagline": "Introduces wash liquor to the cake",
+    "function": "Delivers wash solvent onto the filter cake in controlled stages to displace residual mother liquor and impurities — often the step that determines final product purity.",
+    "construction": "A flanged nozzle feeding a spray header or simple drop pipe inside the vessel head, fitted with an isolation valve so wash volume and timing can be metered precisely per batch.",
+    "explode": { "dx": 210, "dy": -190 }
+  },
+  {
+    "id": "vessel",
+    "index": "07",
+    "name": "Vessel",
+    "tagline": "Jacketed process vessel",
+    "function": "Holds the slurry and the forming filter cake, and provides the jacketed surface through which the batch is heated or cooled — for crystallisation control during filtration and for driving off solvent during the drying stage.",
+    "construction": "A cylindrical, dished-bottom shell in stainless steel or a higher alloy for corrosive duty, with an outer jacket welded around it to carry heat-transfer fluid. Rated for both internal pressure and full vacuum, since ANFDs commonly dry under vacuum to lower the boiling point of residual solvent.",
+    "explode": { "dx": 0, "dy": 60 }
+  },
+  {
+    "id": "slurry-inlet",
+    "index": "08",
+    "name": "Slurry Inlet",
+    "tagline": "Charges the batch into the vessel",
+    "function": "The port through which the slurry from upstream crystallisation or reaction is charged into the vessel, beginning the filtration cycle.",
+    "construction": "A flanged nozzle near the top of the shell, sized to charge the batch quickly without splashing, and usually paired with a sample or inspection port on the head.",
+    "explode": { "dx": -260, "dy": -50 }
+  },
+  {
+    "id": "agitator",
+    "index": "09",
+    "name": "Bi-directional Agitator",
+    "tagline": "J-shaped blades that plough and smooth the cake",
+    "function": "Rotating one direction, the angled J-blades plough into the cake to break it up, mix in wash liquor, or scrape dried product toward the discharge valve. Reversed, the same blades pass over the cake edge-on to smooth and level it back into an even filtration bed — the two-way action that gives the machine its name.",
+    "construction": "Forged or fabricated stainless-steel blades bolted to a hollow shaft, contoured to follow the vessel's curvature within a few millimetres so almost no cake is left unworked. The shaft is hollow in many designs to also carry heating or cooling fluid, turning the blades into an internal heat-transfer surface during drying.",
+    "explode": { "dx": 0, "dy": 20 }
+  },
+  {
+    "id": "heating-cooling-inlet",
+    "index": "10",
+    "name": "Heating/Cooling Media Inlet",
+    "tagline": "Feeds the jacket's thermal fluid",
+    "function": "Circulates hot or cold thermal fluid through the vessel jacket, giving the process precise temperature control through crystallisation, filtration, and the final vacuum-drying stage.",
+    "construction": "A flanged connection low on the jacket, paired with an outlet high on the opposite side so fluid sweeps the full jacket volume, plumbed to a temperature-controlled heat-transfer unit.",
+    "explode": { "dx": -250, "dy": 140 }
+  },
+  {
+    "id": "side-discharge-valve",
+    "index": "11",
+    "name": "Side Discharge Valve",
+    "tagline": "Passes dried solids out of the vessel",
+    "function": "Opens to let the agitator sweep finished, dried product out of the vessel through a large clear bore, sized to pass solids without bridging or blocking.",
+    "construction": "A full-bore butterfly or slide valve in a heavy flanged housing, often fitted with a sight glass so operators can confirm the vessel has emptied completely before the next charge.",
+    "explode": { "dx": 260, "dy": 30 }
+  },
+  {
+    "id": "cip-head",
+    "index": "12",
+    "name": "CIP Head",
+    "tagline": "Clean-in-place spray head",
+    "function": "Sprays cleaning fluid across the interior surfaces between batches, letting the vessel be cleaned without opening it — important for hygienic and cross-contamination-sensitive products.",
+    "construction": "A static or rotating spray-ball nozzle fed through a dedicated CIP line, positioned to cover the vessel wall, agitator, and head in a validated cleaning cycle.",
+    "explode": { "dx": -260, "dy": 210 }
+  },
+  {
+    "id": "filtrate-outlet",
+    "index": "13",
+    "name": "Filtrate Outlet",
+    "tagline": "Carries liquid away from beneath the filter plate",
+    "function": "Collects the liquid that passes through the filter media and drains it away, either to a receiver vessel under vacuum or by gravity, depending on how the batch is being filtered.",
+    "construction": "A flanged branch on the underside of the filter plate leading to a filtrate receiver, typically with sight glass and sample points so filtrate clarity can be checked as the cycle progresses.",
+    "explode": { "dx": 0, "dy": 250 }
+  },
+  {
+    "id": "filter-plate",
+    "index": "14",
+    "name": "Filter Plate",
+    "tagline": "Perforated base with hydraulic lowering, optionally heated",
+    "function": "Supports the filter media and the entire cake above it while letting filtrate drain through. On designs where the plate itself lowers, it can also be dropped away from the vessel wall to help release a stubborn dried cake.",
+    "construction": "A heavy perforated stainless plate, sometimes with its own heating channels for bottom-up drying, resting on a hydraulic lift mechanism and sealed to the vessel wall with a large elastomer or PTFE gasket.",
+    "explode": { "dx": 190, "dy": 220 }
+  },
+  {
+    "id": "filter-media",
+    "index": "15",
+    "name": "Filter Media",
+    "tagline": "Filtration cloth or multi-layer sintered metal",
+    "function": "The actual separating surface: it retains solid particles while letting liquid pass through to the filtrate outlet, so its pore size and chemical resistance directly set the cake's purity and the achievable drainage rate.",
+    "construction": "Either a woven or felted synthetic cloth clamped to the plate, or — for demanding or high-temperature duty — a multi-layer sintered metal disc that resists solvents and abrasion far better than cloth but costs more and is harder to change out.",
+    "explode": { "dx": -130, "dy": 260 }
+  },
+  {
+    "id": "solids-outlet",
+    "index": "16",
+    "name": "Solids Outlet",
+    "tagline": "Collects the finished, dried product",
+    "function": "The final drop point where dried product leaves the machine, usually straight into a drum, bin, or downstream conveying system, completing the batch.",
+    "construction": "A conical transition from the discharge valve down to a drum-docking station or flexible liner connector, often built to maintain containment so operators are never directly exposed to the product.",
+    "explode": { "dx": 250, "dy": 250 }
+  }
+]
